@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>Shop-Card</title>
+</head>
+<body>
+    <div class="container">
+        <header class="flex-wrap">
+            <div class="navigation" >
+                <div class="nav-contact row">
+                    <div class="nav-contact__contact col-2-xl col-2-lg col-2-md"><i class="fa-solid fa-headphones"></i>+1 916-85-2235</div>
+                    <div class="nav-contact__brands col-3-xl col-3-lg col-2-md dropdown">
+                        <button class="dropbtn">Social 
+                            <i class="fa fa-caret-down"></i>
+                          </button>
+                          <div class="dropdown-content">
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                    <div class="nav-contact__items col-6-xl col-6-lg col-3-md dropdown">
+                        <button class="dropbtn">My Contact 
+                            <i class="fa fa-caret-down"></i>
+                          </button>
+                        <ul class="dropdown-content">
+                            <li><i class="fa-solid fa-angle-right"></i>My Account</li>
+                            <li><i class="fa-solid fa-angle-right"></i>FAQ</li>
+                            <li><i class="fa-solid fa-angle-right"></i>Contact Us</li>
+                            <li><i class="fa-solid fa-angle-right"></i>Newsletter Signup</li>
+                            <li><i class="fa-solid fa-angle-right"></i>Shipping Term</li>
+                        </ul>
+                    </div>
+                    <div class="btn-wishlist col-1-xl col-1-lg col-1-md">
+                        <p class="text-wishlist">My Wishlist</p>
+                    </div>
+                </div>
+                <div class="nav-bar">
+                    <div class="nav-bar__logo col-2-xl col-2-lg">
+                        <div class="logo-img"></div>
+                        <div class="thegem">THEGEM</div>
+                    </div>
+                    <div class="nav-bar__items-nav dropdown1 col-9-xl col-7-lg">
+                        <button class="dropbtn1"><i class="fa-solid fa-bars"></i>
+                          </button>
+                        <ul class="ul-nav dropdown-content1">
+                            <li class="li-nav mrg-l1">HOME</li>
+                            <li class="li-nav mrg-l">PAGES</li>
+                            <li class="li-nav mrg-l">BLOG</li>
+                            <li class="li-nav mrg-l">PORTFOLIOS</li>
+                            <li class="btn-empty li-nav mrg-l">SHOP</li>
+                            <li style="color:#00bbd3 ;" class="li-nav mrg-l">FEATURES</li>
+                            <li class="li-nav mrg-l">ELEMENTS</li>
+                        </ul>
+                    </div>
+                    <div class="nav-bar__search col-1-xl col-2-lg">
+                        <img class="england" src="./image/coUK.png" alt="england">
+                        <a class="right-mg"><i class="fa-solid fa-magnifying-glass"></i></a>
+                        <a><i class="fa-solid fa-bag-shopping"></i></a>
+                        <div class="totle-group">
+                        <div class="triangle-topleft"></div>
+                        <div class="recutang">
+                            <p class="number">2</p>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav-buy">
+                    <div class="nav-buy__text-cart"> 
+                        <span>WOO</span> CART
+                    </div>
+                    <div class="nav-buy__cart-shopping">
+                    <img src="https://img.icons8.com/material-outlined/96/000000/shopping-cart--v1.png" alt="cart"/>
+                    </div>
+                    <div class="nav-buy__list">
+                        <ul>
+                            <li>Home <i class="fa-solid fa-arrow-right"></i></li>
+                            <li>Breadcrumbs Example <i class="fa-solid fa-arrow-right"></i></li>
+                            <li>Second Level <i class="fa-solid fa-arrow-right"></i></li>
+                            <li style="color: #b7c3ca;">Third Level <div class="underline"></div></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <section id="content">
+            <div class="general-content">
+                <div class="general-content__title-content">
+                    You Have <span style="color: #1dc2d7;">6 Items</span> In Your Cart
+                </div>
+                <div class="general-content__table">
+                    <div class="table-1">
+                        <table>
+                            <tr class="head-tr">
+                                <th></th>
+                                <th style="text-align: left;">PRODUCT</th>
+                                <th>PRICE</th>
+                                <th>QUANTITY</th>
+                                <th>TOTAL</th>
+                              </tr>
+                              <tr class="table-color">
+                                <td style="width: 5%;">
+                                    <i class="fa-solid fa-circle-xmark"></i>
+                                </td>
+                                <td style="width: 50%; height: 95px;" class="set-td">
+                                    <div><i class="fa-solid fa-square"></i></div><div class="set-p">Lorem ipsum dolor sit amet <span class="span-table">Size: Large, Color:Black</span></div>
+                                </td>
+                                <td>$35.99</td>
+                                <td class="QLT">
+                                    <div class="QLT__change">-</div>
+                                    <div class="QLT__change">1</div>
+                                    <div class="QLT__change">+</div>
+                                </td>
+                                <td>$35.99</td>
+                              </tr>
+                              <tr class="table-color">
+                                <td><i class="fa-solid fa-circle-xmark"></i></td>
+                                <td class="set-td">
+                                    <i class="fa-solid fa-square"></i><p class="set-p">Consectetur</p>
+                                </td>
+                                <td>$1285.99</td>
+                                <td class="QLT">
+                                    <div class="QLT__change">-</div>
+                                    <div class="QLT__change">1</div>
+                                    <div class="QLT__change">+</div>
+                                </td>
+                                <td>$1285.99</td>
+                              </tr>
+                              <tr class="table-color">
+                                <td><i class="fa-solid fa-circle-xmark"></i></td>
+                                <td class="set-td"><i class="fa-solid fa-square">
+                                </i><p class="set-p">Elit set do eiusmod <span class="span-table">Large</span></p>
+                            </td>
+                                <td>$89.99</td>
+                                <td class="QLT">
+                                    <div class="QLT__change">-</div>
+                                    <div class="QLT__change">1</div>
+                                    <div class="QLT__change">+</div>
+                                </td>
+                                <td>$89.99</td>
+                              </tr>
+                              <tr class="table-color">
+                                <td><i class="fa-solid fa-circle-xmark"></i></td>
+                                <td class="set-td">
+                                    <i class="fa-solid fa-square"></i><p class="set-p">Tempor incididunt ut labore</p>
+                                </td>
+                                <td>$12.00</td>
+                                <td class="QLT">
+                                    <div class="QLT__change">-</div>
+                                    <div class="QLT__change">1</div>
+                                    <div class="QLT__change">+</div>
+                                </td>
+                                <td>$12.00</td>
+                              </tr>
+                              <tr class="table-color">
+                                <td><i class="fa-solid fa-circle-xmark"></i></td>
+                                <td class="set-td">
+                                    <i class="fa-solid fa-square"></i><p class="set-p">Et dolore magna aliqua</p>
+                                </td>
+                                <td>$158.25</td>
+                                <td class="QLT">
+                                    <div class="QLT__change">-</div>
+                                    <div class="QLT__change">1</div>
+                                    <div class="QLT__change">+</div>
+                                </td>
+                                <td>$158.25</td>
+                              </tr>
+                            </table> 
+                    </div>
+                </div> 
+                <div class="general-content__check">
+                    <div class="apply-text">
+                    <input class="text-place" type="text" placeholder="Enter Coupon Code Here..">
+                    <button class="btn-empty">APPLY</button>
+                    </div>
+                    <div class="check-card">
+                    <button class="btn-upcard">UPDATE CARD</button>
+                    <button class="btn-checkout"><i class="fa-solid fa-circle-check"></i>CHECKOUT</button>
+                    </div>
+                </div>
+                <div class="general-content__calc-cost">
+                    <div class="calc-1">
+                        <div class="title-calc">CALCULATE SHIPPING</div>
+                        <form class="form-calc">
+                            <select id="country" name="country">
+                                <option value="vietnam">Select your country</option>
+
+                              </select>
+                              <div>
+                              <input class="state-zip" type="text" placeholder="State/Country">
+                              <input class="state-zip" type="text" placeholder="Postcode/Zip">
+                              </div>
+                              <button class="btn-empty">UPDATE TOTALS</button>
+                        </form>
+                    </div>
+                    <div class="calc-2">
+                        <div class="title-calc">CART TOTALS</div>
+                        <table>
+                            <tr>
+                                <td class="td-cl" style="height: 52px;">Subtotal</td>
+                                <td class="td-empty">$1285.99</td>
+                            </tr>
+                            <tr>
+                                <td class="td-cl">Shipping And Handling</td>
+                                <td class="td-empty">
+                                     <input type="radio">
+                                     <label for="html">Flat Rate: $3.99</label><br>
+                                     <input type="radio">
+                                     <label for="css">Free Shipping</label><br>
+                                     <input type="radio">
+                                     <label for="javascript">Flat Rate: $12.99</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="td-cl" style="height: 52px;">Total</td>
+                                <td class="td-empty">$2015.00</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;  
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+    </script>
+</html>

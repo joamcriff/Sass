@@ -1,0 +1,247 @@
+#content {
+  .general-content {
+    @include setPad;
+    &__title-content {
+      color: #5f727f;
+      margin-top: 90px;
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+    &__table {
+      border: 1px solid #dfe5e7;
+      .table-1 {
+        text-align: center;
+        table {
+          border: 1px solid #dfe5e7;
+          width: 100%;
+          height: 527px;
+          border: 0px; 
+          border-collapse: collapse;
+          @media (min-width: 0px) and (max-width: 813px) {
+            font-size: 10px;
+        }
+          .head-tr {
+            height: 60px;
+            background-color: #b6c6c9;
+            color: #fff;
+            font-family: 'Montserrat', sans-serif;
+          }
+          .table-color:nth-child(even) {
+            background-color: #f0f3f2;
+          }
+          .set-td {
+            color: #00bcd4;
+            font-size: 16px;
+            text-align: left;
+          }
+          
+          .fa-circle-xmark {
+            color: red;
+            font-size: 24px;
+          }
+          
+          .span-table {
+            font-size: 14px;
+            color: #99a9b5;
+            font-family: sans-serif;
+            @media (min-width: 0px) and (max-width: 813px) {
+              font-size: 10px;
+          }
+          }
+          .fa-square {
+            position: relative;
+            width: 60px;
+            height: 60px;
+            color: #99a9b5;
+            background-color: #99a9b5;
+            top: 9px;
+            @media (min-width: 0px) and (max-width: 800px) {
+              display: none;
+            }
+          }
+          .set-p {
+            position: relative;
+            left: 100px;
+            top: -32px;
+            @media (min-width: 0px) and (max-width: 1085px) {
+              display: flex;
+              flex-direction: column;
+          }
+          @media (min-width: 0px) and (max-width: 813px) {
+            display: flex;
+            flex-direction: column;
+            font-size: 10px;
+            position: relative;
+            left: 5px;
+            top: 0px;
+          }
+        }
+          .QLT {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 95px;
+            &__change {
+              width: 30px;
+              height: 30px;
+              line-height: 30px;
+            }
+            &__change:nth-child(odd) {
+              background-color: #dfe5e8;
+            }
+            &__change:nth-child(even) {
+              background-color: #f5f7f6;
+              width: 40px;
+            }
+          }
+        }
+      }
+    }
+    &__check {
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between;
+      height: 95px;
+      border: 1px solid #dfe5e7;
+      @media (min-width: 0px) and (max-width: 770px) {
+        display: flex;
+        flex-direction: column;
+        height: 150px;
+    }
+      .apply-text {
+        line-height: 95px;
+        margin-left: 25px;
+        font-family: 'Montserrat', sans-serif;
+        display: flex;
+        .text-place{
+          width: 260px;
+          height: 48px;
+          position: relative;
+          top: 21px;
+          margin-right: 25px;
+          background-color: #f5f7f6;
+          border: 1px solid #dfe5e7;
+          text-align: center;
+          @media (min-width: 576px) and (max-width: 1199px) {
+            width: 100px;
+        }
+        }
+        .btn-empty {
+          border: 2px solid #00bbd3;
+          width: 112px;
+          height: 52px;
+          color: #00bbd3;
+          font-family: 'Montserrat', sans-serif;
+          border-radius: 4px;
+          @media (min-width: 576px) and (max-width: 964px) {
+            width: 100px;
+        }
+        @media (min-width: 0px) and (max-width: 770px) {
+            position: relative;
+            top: 20px;
+      }
+        }
+      }
+      .check-card {
+        display: flex;
+        line-height: 95px;
+        margin-right: 25px;
+        @media (min-width: 0px) and (max-width: 770px) {
+          margin-left: 25px;
+      }
+        .btn-upcard {
+          @include set-btn;
+          border: 1px solid #00bcd4;
+          margin-right: 25px;
+          border-radius: 4px;
+          @media (min-width: 576px) and (max-width: 1199px) {
+            width: 100px;
+        }
+        }
+        .btn-checkout {
+          @include set-btn;
+          border: 1px solid #393d50;
+          border-radius: 4px;
+          @media (min-width: 576px) and (max-width: 1199px) {
+            width: 100px;
+        }
+        @media (min-width: 0px) and (max-width: 770px) {
+          margin-left: 19px;
+      }
+      }
+    }
+    }
+    &__calc-cost {
+      height: 515px;
+      display: flex;
+      justify-content: space-between;
+      .title-calc {
+        margin-top: 80px;
+        font-size: 36px;   
+        margin-bottom: 52px;  
+     }
+      .calc-1{
+        width: 564px;
+        #country {
+          width: 100%;
+          height: 40px;
+          margin-bottom: 18px;
+          color: #bbc6ce;
+        }
+        .state-zip {
+          width: 271px;
+          height: 40px;
+          box-sizing: border-box;
+          margin-bottom: 18px;
+          &:nth-child(odd){
+            margin-right: 18px;
+          }
+        }
+        .btn-empty {
+          border: 2px solid #00bbd3;
+          width: 202px;
+          height: 52px;
+          color: #00bbd3;
+          font-family: 'Montserrat', sans-serif;
+          border-radius: 4px;
+          float: left;
+        }
+      }
+      .calc-2 {
+        table, tr, td {
+          border: 1px solid #dfe5e7;
+          border-collapse: collapse;
+        }
+        width: 564px;
+        table {
+          width: 100%;
+          height: 200px;
+          .td-cl {
+            box-sizing: border-box;
+            padding-left: 25px;
+            background-color: #f0f3f2;
+            font-size: 16px;
+          }
+          .td-empty {
+            box-sizing: border-box;
+            padding-left: 25px;
+          }
+        }
+      }
+      @media (min-width: 0px) and (max-width: 800px) {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        .calc-1 {
+          width: 350px;
+        }
+        .calc-2 {
+          width: 350px;  
+        }
+      }
+    }
+  }
+  @media (min-width: 0px) and (max-width: 800px) {
+    margin-left: -70px;
+  }
+}

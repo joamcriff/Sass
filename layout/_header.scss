@@ -1,0 +1,137 @@
+header {
+  background-color: #ffffffed;
+  border-bottom: 1px solid #dfe5e7;
+  .navigation {
+    width: 100%;
+    .nav-contact {
+      height: 50px;
+      background-color: #f4f6f7;
+      @include setPad;
+      border-bottom: 1px solid #dfe5e7;
+      &__contact {
+        border-right: 1px solid #dfe5e7;
+        line-height: 50px;
+        width: 150px;
+        @media (min-width: 0px) and (max-width: 627px) {
+          display: none;
+        }
+        @media (min-width: 628px) and (max-width: 668px) {
+          font-size: 10px;
+          width: 80px;
+        }
+        .fa-headphones {
+          line-height: 50px;
+        }
+      }
+      &__brands {
+        text-align: center;
+        border-right: 1px solid #dfe5e7;
+        line-height: 50px;
+        .fa-brands {
+          margin-left: 12px;
+          font-size: 18px;
+          color: #5f727f;
+        }
+        .fa-youtube{
+          color: #f44336;
+        }
+        
+        .fa-twitter {
+          margin-left: 0px;
+        }
+        @media (min-width: 768px) and (max-width: 780px) {
+          height: 50px;
+        }
+      }
+      &__items {
+        font-size: 15px;
+        color: #5f727f;
+        line-height: 50px;
+        @media (min-width: 1200px) and (max-width: 1362px) {
+          font-size: 12px;
+        }
+
+        ul {
+          li {
+            height: 50px;
+            margin-left: 25px;
+        }
+      }
+      }
+      .btn-wishlist {
+        margin: none;
+        margin-top: 10px;
+        position: relative;
+        left: 20px;
+        @media (min-width: 964px) and (max-width: 1108px) {
+          width: 74px;
+          font-size: 13px;
+        }
+      }
+    }
+    .nav-buy{
+      position: relative;
+      background-color: #e9f0ef;
+      height: 200px;
+      display: flex;
+      justify-content: flex-end;
+      @include setPad;
+      &__text-cart {
+        position: absolute;
+        top: 40px;
+        font-size: 50px;
+        left: 135px;
+        @media (min-width: 0px) and (max-width: 648px) {
+          font-size: 26px;
+        }
+      }
+      &__cart-shopping {
+        position: relative;
+        height: 120px;
+        width: 120px;
+        top: 35px;
+        @media (min-width: 0px) and (max-width: 648px) {
+          width: 80px;
+        }
+      }
+      &__list {
+        position: absolute;
+        top: 168px;
+        font-size: 16px;
+        color: #1dc2d7;
+        font-family: 'Source Sans Pro', sans-serif;
+        left: 135px;
+        @media (min-width: 0px) and (max-width: 648px) {
+          font-size: 10px;
+        }
+        ul {
+          li{
+            .fa-arrow-right {
+              font-size: 12px;
+              margin-left: 18px;
+              margin-right: 18px;
+            }
+            .underline {
+              width: 73px;
+              height: 4px;
+              background-color: #f44336;
+              position: absolute;
+              top: 28px;
+              @media (min-width: 0px) and (max-width: 648px) {
+                width: 50px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+span {
+  font-family: 'Montserrat', sans-serif;
+}
+@media (min-width: 0px) and (max-width: 800px) {
+  margin-left: -70px;
+}
+}

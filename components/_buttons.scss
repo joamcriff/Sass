@@ -1,0 +1,32 @@
+@mixin btn($bg-cl: #fff){
+  background-color: $bg-cl;
+  border-radius: 5%;
+  height: 30px;
+  width: 100px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  color: #fff
+}
+
+.btn {
+  @include btn();
+}
+
+@each $key, $val in $bg-colors{
+  .btn-#{$key}{
+      @include btn($val);
+      &:hover{
+          background-color: lighten($val, 5);
+      }
+  }
+}
+
+@mixin set-btn {
+  width: 183px;
+  height: 52px;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 2px;
+}
